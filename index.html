@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Library Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex">
+            <div class="flex-shrink-0 flex items-center">
+              <img
+                alt="Library Logo"
+                class="h-8 w-8"
+                height="32"
+                src="https://storage.googleapis.com/a1aa/image/KkRelDHs46uw8mxRRJ0NjJexJOKcmyv6LEI6lomg5FU.jpg"
+                width="32"
+              />
+            </div>
+            <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+              <a
+                class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium"
+                href="#"
+              >
+                Home
+              </a>
+              <a
+                class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium"
+                href="#"
+              >
+                Books
+              </a>
+              <a
+                class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium"
+                href="#"
+              >
+                Borrowers
+              </a>
+              <a
+                class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium"
+                href="#"
+              >
+                FAQs
+              </a>
+              <a
+                class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium"
+                href="#"
+              >
+                About
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:space-x-6">
+        <div class="lg:w-2/3">
+          <div class="relative">
+            <img
+              alt="Bookshelf with various books"
+              class="w-full rounded-lg"
+              height="400"
+              src="https://storage.googleapis.com/a1aa/image/AJSyezgaTGjhv2TtasgqVP97fFFFEAjVwJ8r-yOAS1I.jpg"
+              width="800"
+            />
+            <div
+              class="absolute inset-0 flex items-center justify-between px-4"
+            >
+              <button class="text-white text-2xl">
+                <i class="fas fa-chevron-left"> </i>
+              </button>
+              <button class="text-white text-2xl">
+                <i class="fas fa-chevron-right"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 mt-6 lg:mt-0">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="mb-4">
+              <label
+                class="block text-sm font-medium text-gray-700"
+                for="borrower-nic"
+              >
+                Mã phiếu mượn
+              </label>
+              <input
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                id="borrower-nic"
+                type="text"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-sm font-medium text-gray-700"
+                for="borrower"
+              >
+                Họ Tên người mượn
+              </label>
+              <input
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                id="borrower"
+                type="text"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700" for="book">
+                Tên sách
+              </label>
+              <input
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                id="book"
+                type="text"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-sm font-medium text-gray-700"
+                for="due-date"
+              >
+                Ngày mượn-Trả
+              </label>
+              <input
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                id="due-date"
+                placeholder="dd-----yyyy"
+                type="text"
+              />
+            </div>
+            <button class="w-full bg-blue-500 text-white px-4 py-2 rounded-md">
+              Xác nhận
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
